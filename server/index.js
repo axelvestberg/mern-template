@@ -6,7 +6,7 @@ const app = express();
 app.use(cors())
 
 app.get("/message", (req, res) => {
-  res.json({ message: "test message" });
+  res.send("test message");
 });
 
 app.listen(PORT, () => {
