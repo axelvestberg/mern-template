@@ -8,6 +8,8 @@ class Message extends React.Component {
     this.props.fetchMessage();
   }
 
+
+	
 	renderMessage = () => {
 		return (
 			<p>{this.props.message}</p>
