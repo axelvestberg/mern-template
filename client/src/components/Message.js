@@ -8,8 +8,6 @@ class Message extends React.Component {
     this.props.fetchMessage();
   }
 
-
-	
 	renderMessage = () => {
 		return (
 			<p>{this.props.message}</p>
@@ -19,7 +17,7 @@ class Message extends React.Component {
 	render() {
 		return (
 			<div>
-			 {this.renderMessage()}
+				{this.renderMessage()}
 			</div>
 		)
 	}
