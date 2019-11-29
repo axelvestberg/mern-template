@@ -1,7 +1,7 @@
 # MERN template
 
 ## Commands
-- in ./server - [npm run dev] - starts both server and client
+- in root run [npm run dev] to start client and server
 
 ##
 - This project has:
