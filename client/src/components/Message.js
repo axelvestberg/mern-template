@@ -1,6 +1,7 @@
 import React from 'react'
 import { fetchMessage } from '../redux/actions';
 import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
 
 class Message extends React.Component {
 
@@ -24,7 +25,8 @@ class Message extends React.Component {
 }
 
 const mapStateToProps = state => {
-  return {
+		console.log(typeof(Object.values(state.message)))
+	return {
     message: Object.values(state.message)
   };
 };
@@ -33,3 +35,7 @@ export default connect(
   mapStateToProps,
   { fetchMessage }
 )(Message);
+
+Message.propTypes = {
+  message: PropTypes.array.isRequired
+};
